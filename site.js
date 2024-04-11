@@ -24,7 +24,6 @@ function loadXMLDoc() {
         var downloadLink=document.createElement('a');
         downloadLink.href=dataURL;
         downloadLink.download='target.txt';
-        //downloadLink.style.display='none';
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
